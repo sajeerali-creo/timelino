@@ -1,0 +1,38 @@
+.css-selector {
+    background: linear-gradient(270deg, #8b66e6, #07a8f3, #c227ca);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.inner-banner{
+    padding: 130px 0px 60px 0px;
+}
+@media (min-width: 992px) {
+    .inner-banner{
+        padding: 60px 0px;
+    }
+}
+
+.bg-banner{
+    background-image: url(../img/bg.png);
+    background-attachment: fixed;
+}

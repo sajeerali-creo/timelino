@@ -1,0 +1,1283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timelino</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+
+</head>
+
+<body>
+    <!-- bg -->
+    <div class="bg-img d-flex justify-content-center">
+        <svg width="1155" height="678" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_310_229)">
+                <path
+                    d="M317.219 518.975L203.852 678L0 438.341L317.219 518.975L521.391 232.573C522.698 364.91 566.474 579.231 731.124 377.821C936.936 126.058 882.053 -94.234 1031.02 41.331C1150.2 149.782 1161.7 336.668 1152.55 416.554L855 299L876.173 661.054L317.219 518.975Z"
+                    fill="url(#paint0_linear_310_229)" fill-opacity="0.3" />
+            </g>
+            <defs>
+                <linearGradient id="paint0_linear_310_229" x1="1155.49" y1="0.177041" x2="-78.208" y2="474.645"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#9089FC" />
+                    <stop offset="1" stop-color="#FF80B5" />
+                </linearGradient>
+                <clipPath id="clip0_310_229">
+                    <rect width="1155" height="678" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+
+    </div>
+    <!-- header -->
+    <header class="py-3 py-lg-5 menu-mobile header">
+        <div class="d-flex justify-content-between align-items-center container-xxl">
+            <div>
+                <a href="portfolio.html">
+                    <svg width="177" height="32" viewBox="0 0 177 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M55 26.6856V5.22597H63.5097C65.1456 5.22597 66.5393 5.53683 67.6908 6.15854C68.8423 6.77327 69.7199 7.62901 70.3237 8.72574C70.9346 9.81549 71.24 11.0729 71.24 12.498C71.24 13.923 70.9311 15.1804 70.3132 16.2702C69.6953 17.3599 68.8001 18.2087 67.6276 18.8164C66.4621 19.4241 65.0508 19.728 63.3938 19.728H57.97V16.092H62.6566C63.5342 16.092 64.2574 15.9418 64.8261 15.6415C65.4019 15.3341 65.8302 14.9115 66.111 14.3736C66.3989 13.8287 66.5428 13.2035 66.5428 12.498C66.5428 11.7854 66.3989 11.1637 66.111 10.6328C65.8302 10.0949 65.4019 9.67927 64.8261 9.38588C64.2504 9.0855 63.5202 8.93531 62.6355 8.93531H59.5603V26.6856H55Z"
+                            fill="black" />
+                        <path
+                            d="M81.1662 27C79.5302 27 78.1155 26.6542 76.9219 25.9626C75.7353 25.2641 74.819 24.2931 74.1731 23.0497C73.5271 21.7992 73.2042 20.3497 73.2042 18.7011C73.2042 17.0386 73.5271 15.5856 74.1731 14.3421C74.819 13.0917 75.7353 12.1207 76.9219 11.4292C78.1155 10.7306 79.5302 10.3813 81.1662 10.3813C82.8021 10.3813 84.2134 10.7306 85.3999 11.4292C86.5935 12.1207 87.5133 13.0917 88.1593 14.3421C88.8052 15.5856 89.1282 17.0386 89.1282 18.7011C89.1282 20.3497 88.8052 21.7992 88.1593 23.0497C87.5133 24.2931 86.5935 25.2641 85.3999 25.9626C84.2134 26.6542 82.8021 27 81.1662 27ZM81.1872 23.5421C81.9315 23.5421 82.5529 23.3326 83.0514 22.9134C83.5499 22.4873 83.9255 21.9075 84.1783 21.174C84.438 20.4405 84.5679 19.6058 84.5679 18.6697C84.5679 17.7336 84.438 16.8989 84.1783 16.1654C83.9255 15.4319 83.5499 14.8521 83.0514 14.426C82.5529 13.9998 81.9315 13.7868 81.1872 13.7868C80.436 13.7868 79.8041 13.9998 79.2915 14.426C78.786 14.8521 78.4033 15.4319 78.1436 16.1654C77.8908 16.8989 77.7644 17.7336 77.7644 18.6697C77.7644 19.6058 77.8908 20.4405 78.1436 21.174C78.4033 21.9075 78.786 22.4873 79.2915 22.9134C79.8041 23.3326 80.436 23.5421 81.1872 23.5421Z"
+                            fill="black" />
+                        <path
+                            d="M92.0455 26.6856V10.5909H96.3951V13.3991H96.5636C96.8585 12.4002 97.3535 11.6457 98.0486 11.1358C98.7437 10.6188 99.5441 10.3604 100.45 10.3604C100.675 10.3604 100.917 10.3743 101.177 10.4023C101.436 10.4302 101.665 10.4686 101.861 10.5175V14.4784C101.65 14.4155 101.359 14.3596 100.987 14.3107C100.615 14.2618 100.274 14.2374 99.9654 14.2374C99.3054 14.2374 98.7156 14.3806 98.196 14.667C97.6835 14.9464 97.2763 15.3376 96.9744 15.8405C96.6795 16.3435 96.532 16.9233 96.532 17.58V26.6856H92.0455Z"
+                            fill="black" />
+                        <path
+                            d="M113.596 10.5909V13.944H103.854V10.5909H113.596ZM106.066 6.73485H110.552V21.7399C110.552 22.152 110.616 22.4733 110.742 22.7039C110.868 22.9274 111.044 23.0846 111.269 23.1754C111.5 23.2662 111.767 23.3116 112.069 23.3116C112.28 23.3116 112.49 23.2942 112.701 23.2592C112.912 23.2173 113.073 23.1859 113.185 23.1649L113.891 26.4866C113.666 26.5564 113.35 26.6367 112.943 26.7276C112.536 26.8254 112.041 26.8847 111.458 26.9057C110.377 26.9476 109.429 26.8044 108.615 26.4761C107.807 26.1478 107.179 25.6378 106.729 24.9462C106.28 24.2547 106.059 23.3815 106.066 22.3267V6.73485Z"
+                            fill="black" />
+                        <path
+                            d="M125.218 10.5909V13.944H115.234V10.5909H125.218ZM117.519 26.6856V9.42779C117.519 8.2612 117.747 7.2937 118.204 6.52528C118.667 5.75687 119.299 5.18056 120.099 4.79635C120.9 4.41215 121.809 4.22005 122.827 4.22005C123.515 4.22005 124.144 4.27244 124.712 4.37722C125.288 4.48201 125.716 4.57631 125.997 4.66014L125.197 8.01321C125.021 7.95733 124.804 7.90494 124.544 7.85604C124.291 7.80714 124.031 7.78269 123.765 7.78269C123.105 7.78269 122.645 7.93637 122.385 8.24374C122.125 8.54412 121.995 8.96674 121.995 9.51162V26.6856H117.519Z"
+                            fill="black" />
+                        <path
+                            d="M134.689 27C133.053 27 131.638 26.6542 130.444 25.9626C129.258 25.2641 128.341 24.2931 127.696 23.0497C127.05 21.7992 126.727 20.3497 126.727 18.7011C126.727 17.0386 127.05 15.5856 127.696 14.3421C128.341 13.0917 129.258 12.1207 130.444 11.4292C131.638 10.7306 133.053 10.3813 134.689 10.3813C136.325 10.3813 137.736 10.7306 138.922 11.4292C140.116 12.1207 141.036 13.0917 141.682 14.3421C142.328 15.5856 142.651 17.0386 142.651 18.7011C142.651 20.3497 142.328 21.7992 141.682 23.0497C141.036 24.2931 140.116 25.2641 138.922 25.9626C137.736 26.6542 136.325 27 134.689 27ZM134.71 23.5421C135.454 23.5421 136.075 23.3326 136.574 22.9134C137.072 22.4873 137.448 21.9075 137.701 21.174C137.96 20.4405 138.09 19.6058 138.09 18.6697C138.09 17.7336 137.96 16.8989 137.701 16.1654C137.448 15.4319 137.072 14.8521 136.574 14.426C136.075 13.9998 135.454 13.7868 134.71 13.7868C133.958 13.7868 133.327 13.9998 132.814 14.426C132.308 14.8521 131.926 15.4319 131.666 16.1654C131.413 16.8989 131.287 17.7336 131.287 18.6697C131.287 19.6058 131.413 20.4405 131.666 21.174C131.926 21.9075 132.308 22.4873 132.814 22.9134C133.327 23.3326 133.958 23.5421 134.71 23.5421Z"
+                            fill="black" />
+                        <path d="M150.054 5.22597V26.6856H145.568V5.22597H150.054Z" fill="black" />
+                        <path
+                            d="M153.648 26.6856V10.5909H158.135V26.6856H153.648ZM155.902 8.51617C155.235 8.51617 154.663 8.29613 154.186 7.85604C153.715 7.40896 153.48 6.87456 153.48 6.25285C153.48 5.63812 153.715 5.11071 154.186 4.67062C154.663 4.22354 155.235 4 155.902 4C156.569 4 157.138 4.22354 157.608 4.67062C158.086 5.11071 158.325 5.63812 158.325 6.25285C158.325 6.87456 158.086 7.40896 157.608 7.85604C157.138 8.29613 156.569 8.51617 155.902 8.51617Z"
+                            fill="black" />
+                        <path
+                            d="M169.038 27C167.402 27 165.987 26.6542 164.794 25.9626C163.607 25.2641 162.691 24.2931 162.045 23.0497C161.399 21.7992 161.076 20.3497 161.076 18.7011C161.076 17.0386 161.399 15.5856 162.045 14.3421C162.691 13.0917 163.607 12.1207 164.794 11.4292C165.987 10.7306 167.402 10.3813 169.038 10.3813C170.674 10.3813 172.085 10.7306 173.272 11.4292C174.465 12.1207 175.385 13.0917 176.031 14.3421C176.677 15.5856 177 17.0386 177 18.7011C177 20.3497 176.677 21.7992 176.031 23.0497C175.385 24.2931 174.465 25.2641 173.272 25.9626C172.085 26.6542 170.674 27 169.038 27ZM169.059 23.5421C169.803 23.5421 170.425 23.3326 170.923 22.9134C171.422 22.4873 171.797 21.9075 172.05 21.174C172.31 20.4405 172.44 19.6058 172.44 18.6697C172.44 17.7336 172.31 16.8989 172.05 16.1654C171.797 15.4319 171.422 14.8521 170.923 14.426C170.425 13.9998 169.803 13.7868 169.059 13.7868C168.308 13.7868 167.676 13.9998 167.163 14.426C166.658 14.8521 166.275 15.4319 166.015 16.1654C165.763 16.8989 165.636 17.7336 165.636 18.6697C165.636 19.6058 165.763 20.4405 166.015 21.174C166.275 21.9075 166.658 22.4873 167.163 22.9134C167.676 23.3326 168.308 23.5421 169.059 23.5421Z"
+                            fill="black" />
+                        <g clip-path="url(#clip0_601_240)">
+                            <path
+                                d="M0 23.8408C2.60299 18.6428 6.05771 13.9702 9.01891 8.98708C10.1731 7.04479 11.4706 5.1821 12.609 3.22389C15.1005 -1.05073 21.6677 -0.692524 23.8886 3.32738C25.0826 5.47663 25.1542 7.72141 23.8886 9.79106C20.0199 16.1194 16.0876 22.408 12.1075 28.6647C10.6428 30.9731 8.42985 32.2707 5.65174 31.8886C2.96915 31.5224 1.17015 29.8428 0.246766 27.2876C0.191045 27.1363 0.183085 26.9851 0.0079602 26.9294V23.8328L0 23.8408Z"
+                                fill="#50C0FF" />
+                            <path
+                                d="M45.0069 6.47165C45.2218 8.01593 44.4577 9.34528 43.6059 10.6985C39.8408 16.6527 36.1233 22.6309 32.398 28.609C30.2089 32.1194 25.7353 33.3373 22.2726 30.1851C19.9562 28.0756 19.3671 24.8119 21.0706 22.0259C25.1383 15.3871 29.3572 8.84379 33.5522 2.28458C34.4915 0.811946 35.9562 0.119409 37.6915 0.0318464C39.1801 -0.0397954 40.6845 -0.0875566 42.0139 0.772145C44.0358 2.07762 45.1582 3.86866 45.0069 6.47165Z"
+                                fill="#875FFF" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_601_240">
+                                <rect width="45.0388" height="32" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </a>
+            </div>
+            <div>
+                <div class="d-none d-lg-block">
+                    <div class="d-flex align-items-center">
+                        <ul class="d-flex gap-5 menu-d">
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#skills">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#experience">Experience & Education</a>
+                            </li>
+                            <li>
+                                <a href="#works">Works</a>
+                            </li>
+                            <li>
+                                <a href="#feedback">Feedback</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="d-lg-none menu-mob" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                    aria-controls="staticBackdrop">
+                    <i class="ri-menu-3-line"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header d-flex justify-content-center py-5">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="d-flex flex-column gap-5 menu-d align-items-center text-center">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience & Education</a>
+                    </li>
+                    <li>
+                        <a href="#works">Works</a>
+                    </li>
+                    <li>
+                        <a href="#feedback">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex flex-column justify-content-center gap-3 align-items-center mt-5 px-4">
+                    <a href="sajeerali-cv.pdf" class="btn btn-primary w-100" data-aos="fade-up">CV Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <section class="padding-top padding-bottom bg-banner">
+        <div class="container-xxl d-flex flex-column padding-top gap-3">
+            <h2 class="h3 mt-5 mt-lg-0 padding-top pt-lg-0 pt-5 d-flex" data-aos="fade-up">
+                Hi, my name is &nbsp;<div class="text-gradient">Sajeerali Arakka</div>
+            </h2>
+            <!-- <h4 class="h1" data-aos="fade-up">i design and develop mobile apps</h4> -->
+            <div class="d-flex align-items-center">
+                <h2 class="h1">I do&nbsp;</h2>
+                <h1 class="h1">Hallo, Wij zijn Codefield!</h1>
+            </div>
+
+            <div class="d-md-flex gap-3 align-items-center mt-4">
+                <a href="sajeerali-cv.pdf" class="btn btn-primary px-5 mb-2 mb-md-0" data-aos="fade-up"><span
+                        class="iconoir-cloud-download"></span>&nbsp;Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="padding-top padding-bottom" id="about">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h1 d-flex align-items-center mb-4" data-aos="fade-up">About&nbsp;<div
+                            class="text-gradient">Me</div>
+                    </h2>
+                </div>
+                <div class="col-lg-8">
+                    <p class="h5 mb-3" data-aos="fade-in">Hello! My name is Sajeerali, and I am a passionate Digital
+                        Design. With a background in UI/UX Design, I have honed my skills in [Key Skills or Expertise]
+                        and I am
+                        eager to make a positive impact in this field.
+                    </p>
+                    <p class="h5 mb-3" data-aos="fade-in">Throughout my journey, I have had the opportunity to work on
+                        various projects. These experiences have not only strengthened my technical abilities but have
+                        also
+                        taught me the value of collaboration and effective communication.
+                    </p>
+                    <p class="h5 mb-3" data-aos="fade-in">My approach to UI/UX Design is driven by creativity, attention
+                        to detail, and a strong desire to continuously learn and grow. I believe in staying up-to-date
+                        with the
+                        latest industry trends and technologies to deliver innovative solutions that exceed
+                        expectations.
+                    </p>
+                    <p class="h5 mb-3" data-aos="fade-in">Beyond my professional endeavors, I am an avid Content
+                        creation
+                        on youtube and Research of new design technologies. These activities have provided me with a
+                        fresh
+                        perspective and the ability to draw inspiration from unexpected sources.
+                    </p>
+                    <p class="h5 mb-3" data-aos="fade-in">In my work, I strive for excellence, and I am committed to
+                        delivering high-quality results that align with both the objectives of the project and the needs
+                        of the
+                        end-users. I am a strong believer in the power of teamwork and enjoy collaborating with diverse
+                        groups
+                        to tackle challenges and drive success.
+                    </p>
+                    <p class="h5 mb-3" data-aos="fade-in">As I move forward in my career, my ultimate goal is to I am
+                        thrilled to present my very own design system, developed in collaboration with my current
+                        organization,
+                        to the world. I am excited about the opportunities that lie ahead, and I am eager to make a
+                        meaningful
+                        contribution to Digital Design field.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="profile-pic">
+                        <img src="img/me.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section class="padding-bottom" id="about">
+        <div class="container-xxl">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="mb-2">
+                        <h2 class="h3 d-flex align-items-center bg-light-blue" data-aos="fade-up">Work Experience</h2>
+                    </div>
+
+                    <div class="mt-4">
+                        <ul class="timeline mt-4">
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>2015 - present</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">KABi Technologies</h3>
+                                    <p>Senior UI UX Designer</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>Dec 2020 – Mar 2021</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Coder Consulting International</h3>
+                                    <p>UI-UX Designer & Mentor</p>
+                                </div>
+                            </li>
+
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>May 2014 – Aug 2015</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">7NODES Technologies</h3>
+                                    <p>UX lead Engineer</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>Jan 2013 – Aug 2013</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">CODEXMIND TECHNOLOGIES PRIVATE LIMITED</h3>
+                                    <p>UI Designer & Developer</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>Jan 2012 – Jul 2012</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Smartzin info Ventures (kinfra technopark)</h3>
+                                    <p>Web designer</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-2">
+                        <h2 class="h3 d-flex align-items-center bg-light-blue" data-aos="fade-up">Education
+                            Qualification</h2>
+                    </div>
+                    <div class="mt-4">
+                        <ul class="timeline mt-4">
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>Aug 2023</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Generative AI</h3>
+                                    <p>LinkedIn Learning Certificate&nbsp;<a
+                                            href="https://www.linkedin.com/learning/certificates/6325a5e49515559b6b35e633f9ec856175e31e2e31c662de17cbae14acf48bf2"
+                                            class="text-primary text-decoration-underline" target="_blank">View</a></p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>Jun 2023</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">UI/UX Design</h3>
+                                    <p>Great Learning&nbsp;<a
+                                            href="https://www.linkedin.com/learning/certificates/6325a5e49515559b6b35e633f9ec856175e31e2e31c662de17cbae14acf48bf2"
+                                            class="text-primary text-decoration-underline" target="_blank">View</a></p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>May 2023</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">Fundamentals of Web Design & Development</h3>
+                                    <p>Webflow University&nbsp;<a
+                                            href="https://www.linkedin.com/in/sajeerali-arakka-kuningarath-77594053/recent-activity/all/"
+                                            class="text-primary text-decoration-underline" target="_blank">View</a></p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-info">
+                                    <span>2012 – 2009</span>
+                                </div>
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h3 class="timeline-title">BMMC - Multimedia Communication</h3>
+                                    <p>University of Calicut</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- skills -->
+    <section class="padding-top padding-bottom bg-banner" id="skills">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <h2 class="h1 d-flex align-items-center mb-4" data-aos="fade-up">Personal &nbsp;<div
+                            class="text-gradient">Skils</div>
+                    </h2>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="mb-4">
+                        <label class="mb-3">UI Design (90%)</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="mb-4">
+                        <label class="mb-3">UX Design (75%)</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="mb-4">
+                        <label class="mb-3">HTML, CSS3 Development (90%)</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="mb-4">
+                        <label class="mb-3">Wireframe & Prototype (45%)</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 45%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="mb-4">
+                        <label class="mb-3">Graphic Design (90%)</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="mb-4">
+                        <label class="mb-3">Motion Design (90%)</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="mb-4">
+                        <label class="mb-3">Illustration (50%)</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 mb-4">
+                    <div class="mb-4">
+                        <label class="mb-3">Project Delivery (95%)</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding-top padding-bottom">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <h2 class="h1 d-flex align-items-center mb-4" data-aos="fade-up">Essential Tools in My&nbsp;<div
+                            class="text-gradient">Design Process</div>
+                    </h2>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="h4 mb-3">UI-UX Tools</h3>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/1.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Figma</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/2.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Adobe XD</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/3.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Miro</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/4.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Sketch</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/5.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Marvel-app</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/6.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Adobe After Effects</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/7.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Invision Studio</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/8.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Anima</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/9.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Principle</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/10.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Webflow</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h3 class="h4 my-3">Graphic Design Tool</h3>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/11.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Adobe Photoshop</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/12.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Adobe Indesign</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/13.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Adobe Illustrator</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/14.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Spline</div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h3 class="h4 my-3">Other Tools & Technology</h3>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/15.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Visual Studio Editor</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/16.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">HTML, HTML5, HAML</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/17.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Git</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/18.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">JQuary</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/19.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">CSS</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/20.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">SASS</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/21.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Bootstrap</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/22.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Material UI</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/23.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Jira</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center gap-3 mb-3 cards-tool mb-3">
+                                <div>
+                                    <img src="img/tools/24.svg">
+                                </div>
+                                <div class="h-4 font-weight-600">Asana</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- projects -->
+    <section class="padding-bottom" id="works">
+        <div class="container-xxl">
+            <div class="d-flex flex-column justify-content-center mb-5">
+                <h2 class="h1 d-flex align-items-center" data-aos="fade-up">Success&nbsp;<div class="text-gradient">
+                        Projects</div>
+                </h2>
+                <h4 class="h5" data-aos="fade-up">Here are some of my selected works I have done lately. Feel free to
+                    check them out.</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                    <div class="project-image mb-4">
+                        <a href="https://www.behance.net/gallery/87123781/Laaddu">
+                            <img src="img/projects/laaddu.png" alt="Laaddu">
+                        </a>
+                    </div>
+                    <h4 class="h5 font-weight-600 head" data-aos="fade-in">Laaddu - Mobile App</h4>
+                    <p class="h5 fs-6 text-black-50" data-aos="fade-in">@ Boston, United State</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                    <div class="project-image mb-4">
+                        <a href="https://www.behance.net/gallery/86832811/Participate-Mobile-App">
+                            <img src="img/projects/participate.png" alt="participate">
+                        </a>
+                    </div>
+                    <h4 class="h5 font-weight-600 head" data-aos="fade-in">Participate - Mobile App</h4>
+                    <p class="h5 fs-6 text-black-50" data-aos="fade-in">@ Berlin, Germany</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                    <div class="project-image mb-4">
+                        <a href="https://www.behance.net/gallery/95674855/ANGEL-DAVIS">
+                            <img src="img/projects/angel-davis.png" alt="Angel Davis">
+                        </a>
+                    </div>
+                    <h4 class="h5 font-weight-600 head" data-aos="fade-in">Angel Davis - Branding</h4>
+                    <p class="h5 fs-6 text-black-50" data-aos="fade-in">@ Europe, Poland</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                    <div class="project-image mb-4">
+                        <a href="https://www.behance.net/gallery/131753203/Fitness-App-ELITANT">
+                            <img src="img/projects/elitant.png" alt="ELITANT">
+                        </a>
+                    </div>
+                    <h4 class="h5 font-weight-600 head" data-aos="fade-in">ELITANT - Mobile App</h4>
+                    <p class="h5 fs-6 text-black-50" data-aos="fade-in">@ India, Kerala</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                    <div class="project-image mb-4">
+                        <a href="https://www.behance.net/gallery/109924801/ODIKO">
+                            <img src="img/projects/odiko.png" alt="odiko">
+                        </a>
+                    </div>
+                    <h4 class="h5 font-weight-600 head" data-aos="fade-in">Odiko - Mobile App</h4>
+                    <p class="h5 fs-6 text-black-50" data-aos="fade-in">@ India, Thalassery</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                    <div class="project-image mb-4">
+                        <a href="https://www.behance.net/gallery/181091497/ChampionsHubb">
+                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/17b61a181091497.Y3JvcCw4MDgsNjMyLDAsMA.png" alt="ChampionsHubb">
+                        </a>
+                    </div>
+                    <h4 class="h5 font-weight-600 head" data-aos="fade-in">ChampionsHubb</h4>
+                    <p class="h5 fs-6 text-black-50" data-aos="fade-in">@ UAE, Dubai</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                    <div class="project-image mb-4">
+                        <a href="https://www.behance.net/gallery/176731987/EPRO">
+                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/0ba21f176731987.Y3JvcCwxMDUxLDgyMiw0MzcsMjI4Mw.png" alt="EPRO">
+                        </a>
+                    </div>
+                    <h4 class="h5 font-weight-600 head" data-aos="fade-in">EPRO - Branding</h4>
+                    <p class="h5 fs-6 text-black-50" data-aos="fade-in">@ Dubai, United Arab Emirates</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                    <div class="project-image mb-4">
+                        <a href="https://www.behance.net/gallery/153273857/Modern-Nft-platform">
+                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/07ed5f153273857.Y3JvcCw4MDgsNjMyLDAsMA.png" alt="Modern Nft platform">
+                        </a>
+                    </div>
+                    <h4 class="h5 font-weight-600 head" data-aos="fade-in">Modern Nft platform - Mobile App</h4>
+                    <p class="h5 fs-6 text-black-50" data-aos="fade-in">@ Dubai, United Arab Emirates</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+                    <div class="project-image mb-4">
+                        <a href="https://www.behance.net/gallery/121816793/Profile-App">
+                            <img src="https://mir-s3-cdn-cf.behance.net/projects/808/f095dd121816793.Y3JvcCwxNTM0LDEyMDAsNDEsMA.png" alt="Profile App">
+                        </a>
+                    </div>
+                    <h4 class="h5 font-weight-600 head" data-aos="fade-in">Profile App</h4>
+                    <p class="h5 fs-6 text-black-50" data-aos="fade-in">@ UAE, Dubai</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column mt-5">
+                <a href="https://www.behance.net/creotopi" target="_blank" class="btn btn-primary px-5"
+                    data-aos="fade-up">
+                    <span class="iconoir-behance-tag"></span>&nbsp;More works on Behance</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- testimonials -->
+    <section class="padding-top padding-bottom" id="feedback">
+        <div class="container-xxl">
+            <div class="d-flex flex-column mb-5">
+                <h2 class="h1 d-flex align-items-center" data-aos="fade-up">Feedback from&nbsp;<div
+                        class="text-gradient">
+                        Clients</div>
+                </h2>
+                <h4 class="h5" data-aos="fade-up">checkout what my blissful clients need to say</h4>
+            </div>
+        </div>
+
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-white testimonial-box p-4 d-flex flex-column mb-4" data-aos="fade-up">
+                        <quote>&rdquo;</quote>
+                        <div class="d-flex gap-3 align-items-center mb-2">
+                            <div class="client-image">
+                                <img src="https://media.licdn.com/dms/image/C4D03AQEkQDSY8zUQDg/profile-displayphoto-shrink_400_400/0/1649243912990?e=1694649600&v=beta&t=aBdeJsnWTeXN1UYyJKrcl-FB5bgPGTQBEL3GSHkB5oM">
+                            </div>
+                            <div class="client-details">
+                                <h3 class="fs-6 font-weight-600 m-0">Sabarish Panicker</h3>
+                                <span class="fs-6 opacity-75">CEO - Hire and Care DP UG Berlin Germany</span>
+
+                                <div class="d-flex gap-2 mt-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4">
+                            I had the pleasure of working with Sajeer, who designed our company's website, Hire and
+                            Care. From the initial consultation to the final product, Sajeer was a consummate
+                            professional who demonstrated a high level of expertise and creativity.</p>
+                        <p>
+                            Sajeer was very attentive to our needs and was able to transform our vision into a
+                            beautiful, functional website that truly captured the essence of our company. He worked
+                            closely with us throughout the design process, providing valuable feedback and suggestions
+                            that helped to enhance the overall look and feel of the website.
+                        </p>
+                        <p>
+                            His attention to detail was outstanding, ensuring that every aspect of the website was
+                            perfectly crafted and functional. He was always responsive to our questions and concerns,
+                            and he went above and beyond to ensure that we were completely satisfied with the final
+                            product.
+                        </p>
+                        </p>
+                        We are very happy with the outcome of the project and would definitely recommend Sajeer to
+                        anyone who needs a top-notch designer. Overall, I highly recommend Sajeer for his
+                        exceptional work, professionalism, and dedication to his clients. We are extremely pleased
+                        with our website and grateful to have had the opportunity to work with such a talented
+                        designer.
+                        </p>
+                        
+                    </div>
+
+                    <div class="bg-white testimonial-box p-4 d-flex flex-column mb-4" data-aos="fade-up">
+                        <quote>&rdquo;</quote>
+                        <div class="d-flex gap-3 align-items-center mb-2">
+                            <div class="client-image">
+                                <img src="img/testimonials/c2.jpeg">
+                            </div>
+                            <div class="client-details">
+                                <h3 class="fs-6 font-weight-600 m-0">Satya Nadella</h3>
+                                <span class="fs-6 opacity-75">Product Designer</span>
+                                <div class="d-flex gap-2 mt-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4">
+                            Excellent job and it's awesome! Really, I have liked your job and it was fantastic
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-white testimonial-box p-4 d-flex flex-column mb-4" data-aos="fade-up">
+                        <quote>&rdquo;</quote>
+                        <div class="d-flex gap-3 align-items-center mb-2">
+                            <div class="client-image">
+                                <img src="img/testimonials/maximillian.jpeg">
+                            </div>
+                            <div class="client-details">
+                                <h3 class="fs-6 font-weight-600 m-0">Maximilian Garmatsch</h3>
+                                <span class="fs-6 opacity-75">10y+ Senior JavaScript Developer</span>
+
+                                <div class="d-flex gap-2 mt-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4">
+                            He was responsible for mentoring our junior designers, designing new features as well as
+                            researching and testing solutions. He followed a user-centered design approach and a
+                            problem-solving methodology with the user’s needs as a priority.
+                            In my personal opinion, I see Sajeerali’s strengths in: his conscientiousness when
+                            developing a User Experience. his calm and positive demeanor during collaboration and also
+                            his communication skills in fluent English.
+                        </p>
+                        <a href="https://www.linkedin.com/in/sajeerali-arakka-kuningarath-77594053/details/recommendations/"
+                            class="text-primary text-decoration-underline" target="_blank">View Details</a>
+                    </div>
+                    <div class="bg-white testimonial-box p-4 d-flex flex-column mb-4" data-aos="fade-up">
+                        <quote>&rdquo;</quote>
+                        <div class="d-flex gap-3 align-items-center mb-2">
+                            <div class="client-image">
+                                <img src="img/testimonials/c5.jpeg">
+                            </div>
+                            <div class="client-details">
+                                <h3 class="fs-6 font-weight-600 m-0">Bill Clark</h3>
+                                <span class="fs-6 opacity-75">Graphic Designer</span>
+                                <div class="d-flex gap-2 mt-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4">
+                            Hey Sareejali, really nice design. Like the ! within the M. Might set it to the otherside.
+                            Opening with an ! means alarm. Ending with it gives the M more power. At least, thats my
+                            interpretation. Anyways, thank you for sharing your
+                            work.
+                        </p>
+                    </div>
+                    <div class="bg-white testimonial-box p-4 d-flex flex-column mb-4" data-aos="fade-up">
+                        <quote>&rdquo;</quote>
+                        <div class="d-flex gap-3 align-items-center mb-2">
+                            <div class="client-image">
+                                <img src="img/testimonials/c3.jpeg">
+                            </div>
+                            <div class="client-details">
+                                <h3 class="fs-6 font-weight-600 m-0">Vijeshri B. Mistri</h3>
+                                <span class="fs-6 opacity-75">Web designer & Graphic Designer MissArtistico</span>
+                                <div class="d-flex gap-2 mt-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4">
+                            clean, simple design... flat colors... love it..
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="bg-white testimonial-box p-4 d-flex flex-column mb-4" data-aos="fade-up">
+                        <quote>&rdquo;</quote>
+                        <div class="d-flex gap-3 align-items-center mb-2">
+                            <div class="client-image">
+                                <img src="img/testimonials/c1.png">
+                            </div>
+                            <div class="client-details">
+                                <h3 class="fs-6 font-weight-600 m-0">Free DownloadPSD</h3>
+                                <span class="fs-6 opacity-75">New Delhi, India</span>
+                                <div class="d-flex gap-2 mt-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4">
+                            Awesome Work! Totally loved the way you showcased and designed your project. It’s
+                            Impressive! :D
+                            I really appreciate your work. :) You have a potential to always do more so always continue
+                            to
+                            Improve. best of luck for your next project.
+                        </p>
+
+                    </div>
+                    <div class="bg-white testimonial-box p-4 d-flex flex-column mb-4" data-aos="fade-up">
+                        <quote>&rdquo;</quote>
+                        <div class="d-flex gap-3 align-items-center mb-2">
+                            <div class="client-image">
+                                <img src="img/testimonials/c4.jpeg">
+                            </div>
+                            <div class="client-details">
+                                <h3 class="fs-6 font-weight-600 m-0">Sirine RG</h3>
+                                <span class="fs-6 opacity-75">Graphic Designer & Photographer</span>
+                                <div class="d-flex gap-2 mt-2">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.53841 0.609982C8.70921 0.199342 9.29097 0.199342 9.46177 0.609982L11.5279 5.57746C11.5999 5.75058 11.7627 5.86887 11.9496 5.88385L17.3124 6.31378C17.7557 6.34932 17.9355 6.90258 17.5977 7.19191L13.5118 10.6919C13.3694 10.8139 13.3072 11.0053 13.3507 11.1876L14.599 16.4208C14.7022 16.8534 14.2316 17.1954 13.852 16.9635L9.26067 14.1592C9.10067 14.0615 8.89945 14.0615 8.73944 14.1592L4.14813 16.9635C3.76858 17.1954 3.29795 16.8534 3.40115 16.4208L4.64946 11.1876C4.69296 11.0053 4.63077 10.8139 4.48838 10.6919L0.40248 7.19191C0.0647096 6.90258 0.24448 6.34932 0.6878 6.31378L6.05061 5.88385C6.23751 5.86887 6.40031 5.75058 6.47232 5.57746L8.53841 0.609982Z"
+                                            fill="#FBBF24" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4">
+                            Looks really good, very clean. Keep up the good work :)
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer class="padding-top padding-bottom bg-black" id="contact">
+        <div class="container-xxl d-flex flex-column align-items-center justify-content-center text-center gap-3">
+            <h5 class="h1 text-gradient">Get in Touch</h5>
+            <P class="h5 text-white fs-6">I'm happy to connect, listen and help. Let's work together and build something
+                awesome. Let's<br> turn your idea to an even greater product. Email Me.</P>
+            <a href="mailto:sajeer.ali09@gmail" class="text-gradient fs-5">sajeer.ali09@gmail.com</a>
+            <div>
+                <p class="h5 text-white opacity-50">Call Me</p>
+                <a href="tel:+971 55 377 5176" class="text-white fs-5">+971 55 377 5176</a>
+            </div>
+            <div class="d-flex justify-content-center gap-3 social">
+                <a href="https://www.instagram.com/creotopi_vlog/" target="_blank">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sajeerali-arakka-kuningarath-77594053/" target="_blank">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+                <a href="https://in.pinterest.com/creotopi/" target="_blank">
+                    <i class="ri-pinterest-line"></i>
+                </a>
+                <a href="https://dribbble.com/Creotopi" target="_blank">
+                    <i class="ri-dribbble-line"></i>
+                </a>
+                <a href="https://www.behance.net/creotopi" target="_blank">
+                    <i class="ri-behance-line"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 350) {
+                $(".header").addClass("top-fixed");
+            } else {
+                $(".header").removeClass("top-fixed");
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+            // array with texts to type in typewriter
+            var dataText = ["Mobile App & UI Design!.", "Website & Development!", "Digital Design Assets!", "Wireframe & Prototype!", "Micro Animation", "Design Documentaion", "Design System"];
+
+            // type one text in the typwriter
+            // keeps calling itself until the text is finished
+            function typeWriter(text, i, fnCallback) {
+                // chekc if text isn't finished yet
+                if (i < (text.length)) {
+                    // add next character to h1
+                    document.querySelector("h1").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+                    // wait for a while and call this function again for next character
+                    setTimeout(function () {
+                        typeWriter(text, i + 1, fnCallback)
+                    }, 100);
+                }
+                // text finished, call callback if there is a callback function
+                else if (typeof fnCallback == 'function') {
+                    // call callback after timeout
+                    setTimeout(fnCallback, 700);
+                }
+            }
+            // start a typewriter animation for a text in the dataText array
+            function StartTextAnimation(i) {
+                if (typeof dataText[i] == 'undefined') {
+                    setTimeout(function () {
+                        StartTextAnimation(0);
+                    }, 20000);
+                }
+                // check if dataText[i] exists
+                if (i < dataText[i].length) {
+                    // text exists! start typewriter animation
+                    typeWriter(dataText[i], 0, function () {
+                        // after callback (and whole text has been animated), start next text
+                        StartTextAnimation(i + 1);
+                    });
+                }
+            }
+            // start the text animation
+            StartTextAnimation(0);
+        });
+    </script>
+
+</body>
+
+</html>
