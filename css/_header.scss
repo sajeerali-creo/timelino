@@ -2,7 +2,7 @@
     li {
         a {
             font-size: 14px;
-            color: var(--black);
+            color: var(--white);
         }
     }
 }
@@ -21,7 +21,7 @@
 }
 
 .menu-mobile{
-    background: var(--white);
+    background: #02091c;
     position: fixed;
     z-index: 13;
     width: 100%;
@@ -39,11 +39,15 @@
 }
 .top-fixed{
     position: fixed;
-    background-color: var(--white);
+    background-color: var(--black);
     z-index: 13;
     padding: 20px 0px!important;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     .logo{
         height: 30px;
     }
+}
+
+.offcanvas{
+    background-color: #02091c;
 }

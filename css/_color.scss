@@ -1,8 +1,8 @@
 :root {
     --white: #fff;
     --primary: #875FFF;
-    --black: #000;
-    --text: #666;
+    --black: #0f172a;
+    --text: #fff;
 }
 
 .text-white {
@@ -10,7 +10,7 @@
 }
 
 .text-black {
-    color: var(--black);
+    color: var(--white);
 }
 
 .text-gray {
@@ -39,4 +39,11 @@
     &:hover{
         border: 1px solid #000
     }
+}
+
+.bg-white{
+    background-color: var(--black)!important;
+}
+.bg-black{
+    background-color: var(--black)!important;
 }

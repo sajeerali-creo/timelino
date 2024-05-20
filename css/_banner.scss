@@ -1,10 +1,5 @@
 .css-selector {
-    background: linear-gradient(270deg, #8b66e6, #07a8f3, #c227ca);
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    background: #131a30;
 }
 
 @-webkit-keyframes AnimationName {
@@ -33,6 +28,6 @@
 }
 
 .bg-banner{
-    background-image: url(../img/bg.png);
+    // background-image: url(../img/bg.png);
     background-attachment: fixed;
 }
